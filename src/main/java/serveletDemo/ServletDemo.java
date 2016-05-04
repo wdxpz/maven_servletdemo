@@ -32,7 +32,7 @@ public class ServletDemo extends HttpServlet {
         } else if("login".equals(action)) {  
             String name = req.getParameter("name");  
             String password = req.getParameter("password");  
-              
+            resp.getWriter().write("name->" + name + ",password->" + password);
             System.out.println("name->" + name + ",password->" + password);
         }
     }
